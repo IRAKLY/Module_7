@@ -5,8 +5,9 @@ def custom_write(file_name, strings):
         start_string = file.tell()
         file.write(string + '\n')
         strings_positions[i, start_string] = string
-
+    file.close()
     return strings_positions
+
 
 
 info = [
